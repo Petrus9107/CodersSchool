@@ -4,7 +4,7 @@
 #include <vector>
 
 
-bool isPalindrom (const std::string & text){
+bool isPalindrome (const std::string & text){
 
     if (text == ""){
         std::cout << "Text is empty." << std::endl;
@@ -29,8 +29,8 @@ int main(void){
     bool result;
 
     std::vector<std::string> textVector{"Ala ma kota", "ala", "kajak", "neveroddoreven", "abacada"};
-    for (auto text : textVector){
-        result = isPalindrom(text);
+    for (auto& text : textVector){
+        result = isPalindrome(text);
         std::cout << text << "  ---> " << std::boolalpha << result << std::endl;
     
     }
